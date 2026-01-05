@@ -73,62 +73,182 @@ elif(potion == "3"):
     potion_3 = True
 # Displays Potion for debugging purposes (if debug mode is enabled)
 debugging("potion", potion, debug)
-
-
-
-
 print(f"{name}'s Adventure Begins")
-
-
-# TODO: STEP #6: Write the main story
-# Write a creative story (at least 3-4 sentences) that uses all three variables
-# Make sure to use each variable at least once in your story
-# Example: print(f"Once upon a time, {hero_name} discovered a mysterious {magical_weapon}...")
-# Remember to use proper punctuation and make the story engaging!
 if(power_1 == True and potion_1 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap).\n")
     print("You wake up in a mysterious prison cell with minimal security.\n")
-    print("You look around, and using your superpower to see through walls, you see a mysterious creature holding a flamethrower.\n")
-    print("You remember that you purchased a fire resistance potion from a witch, so you slide through the bars, and just as you suspected, the creature runs over, and you battle.\n")
-    print("He shoots fire at you, you use your potion, and then you defeat the monster.\n")
+    print("Seeing through walls (1)")
+    print("Fire Resistance potion (2)")
+    Power = input("Select a power to use (1 or 2)")
+    if(Power == "1"):
+        print("You look around, and using your superpower to see through walls, you see a mysterious creature holding a flamethrower.")
+        print("you slide through the bars, and just as you suspected, the creature runs over, and you battle.")
+        print("He shoots fire at you")
+        print("Seeing through walls (1)")
+        print("Fire Resistance potion (2)")
+        Power = input("Select a power to use (1 or 2)")
+        if(Power == "1"):
+            print("bruh")
+            sys.exit(0)
+        elif(Power == "2"):
+            print("you use your fire resistance potion, and then you defeat the monster.")
+    elif(Power == "2"):
+        print("You jump out of the cell, and a mysterious creature jumps out, you battle")
+        print("He shoots fire at you, thank goodness you used the fire resistance potion")
+        print("You defeat the creature")
+        sys.exit(0)
 elif(power_1 == True and potion_2 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap)\n")
-    print("You wake up in a mysterious prison cell with minimal security. You look around, and using your superpower to see through walls, you see a mysterious creature holding a flamethrower.\n")
-    print("You remember that you purchased an instant healing potion from a witch, so you slide through the bars, and just as you suspected, the creature runs over, and you battle.\n")
-    print("He shoots fire at you, you use your potion, and then you defeat the monster.\n")
+    print("You wake up in a mysterious prison cell with minimal security.\n")
+    print("Seeing through walls (1)\n")
+    print("Instant Healing potion (2)\n")
+    Power = input("Select a power to use (1 or 2)\n")
+    if(Power == "1"):
+        print("You look around, and using your superpower to see through walls, you see a mysterious creature holding a flamethrower.\n")
+        print("so, you slide through the bars and just as you suspected the creature runs over and you battle.\n")
+        print("He shoots fire at you\n")
+        print("Seeing through walls (1)\n")
+        print("Instant Healing Potion (2)\n")
+        Power = input("Select a power to use (1 or 2)\n")
+        if(Power == "1"):
+            print("bruh")
+            sys.exit()
+        elif(Power == "2"):
+            print("you use your potion, and then you defeat the monster.\n")
+    elif(Power == "2"):
+        print("YOU WERE ALREADY AT FULL HEALTH... you're trapped... GAME OVER")
+        sys.exit(0)
 elif(power_1 == True and potion_3 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap)\n")
-    print("You look around, and using your superpower to see through walls, you see a mysterious creature holding a flamethrower.\n")
-    print("You remember that you purchased an invisibility potion from a witch, so you slide through the bars, and just as you suspected, the creature runs over, and you battle.\n")
-    print("You use your potion, and then you walk over to him and defeat him undetected.\n")
+    print("You wake up in a mysterious prison cell with minimal security.\n")
+    print("Seeing through walls (1)\n")
+    print("invisibility potion (2)\n")
+    Power = input("Select a power to use (1 or 2)")
+    if(Power == "1"):
+        print("You look around, and using your superpower to see through walls, you see a mysterious creature holding a flamethrower.\n")
+        print("you slide through the bars, and just as you suspected, the creature runs over, and you battle.\n")
+        print("Seeing through walls (1)\n")
+        print("Invisibility Potion (2)\n")
+        Power = input("Select a power to use (1 or 2)\n")
+        if(Power == "1"):
+            print("bruh")
+            sys.exit(0)
+        elif(Power == "2"):
+            print("You use your potion and the creature looses you and you defeat him\n")
+    elif(Power == "2"):
+        print("You use your potion and slide through the bars.\n")
+        print("You see a mysterious creature, so you sneak up and defeat himd")
 elif(power_2 == True and potion_1 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap)\n")
     print("You wake up in a mysterious prison cell with minimal security. You slide through the bars, and a mysterious creature runs over, and you battle.\n")
-    print("He shoots fire at you, you remember that you purchased a potion from a witch, you use it, you still can’t defeat the monster.\n")
-    print("You notice a lion in another prison cell, you help him escape, and you work together to defeat the monster.\n")
+    print("He shoots fire at you.\n")
+    print("Talking to animals (1)\n")
+    print("Fire Resistance Potion (2)\n")
+    Power = input("Select a power to use (1 or 2)\n")
+    if(Power == "1"):
+        print("You dodge the fire attack and notice a lion in another prison cell.\n")
+        print("you help him escape")
+        print("you see a mysterious creature, you defeat the creature together")
+    elif(Power == "2"):
+        print("Your not on fire anymore, but you still can't defeat the creature")
+        print("You notice a lion in another prison cell.\n")
+        print("Talking to animals (1)\n")
+        print("Fire Resistance Potion (2)\n")
+        Power = input("Select a power to use (1 or 2)\n")
+        if(Power == "1"):
+            print("you help him escape, and you work together to defeat the monster")
+        elif(Power == "2"):
+            print("Well... about that... you already used that one... GAME OVER")
+            sys.exit(0)
 elif(power_2 == True and potion_2 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap)\n")
     print("You wake up in a mysterious prison cell with minimal security. You slide through the bars, and a mysterious creature runs over, and you battle.\n")
-    print("He shoots fire at you, you remember that you purchased a potion from a witch, you heal up, and you can’t defeat the monster.\n")
-    print("You notice a lion in another prison cell, you help him escape, and you work together to defeat the monster.\n")
+    print("He shoots fire at you.\n")
+    print("Talking to animals (1)\n")
+    print("Instant Healing Potion (2)\n")
+    Power = input("Select a power to use (1 or 2)\n")
+    if(power == "1"):
+        print("YOU'RE STILL ON FI- oooohhh game over :(")
+        sys.exit(0)
+    elif(power == "2"):
+        print("You heal up but you still can't defeat the creature")
+        print("You notice a lion in another prison cell.\n")
+        print("Talking to animals (1)\n")
+        print("Instant Healing Potion (2)\n")
+        Power = input("Select a power to use (1 or 2)\n")
+        if(Power == "1"):
+            print("You help the lion escape and you work together to defeat the monster.")
+        elif(Power == "2"):
+            print("Well... about that... you already used that one... GAME OVER")
+            sys.exit(0)
+
 elif(power_2 == True and potion_3 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap)\n")
-    print("You wake up in a mysterious prison cell with minimal security. You slide through the bars, and a mysterious creature runs over, and you battle.\n")
-    print("You remember that you purchased a potion from a witch, you go invisible,\n")
-    print("you notice a lion in another prison cell, you help him escape, and you work together to defeat the monster.\n")
+    print("You wake up in a mysterious prison cell with minimal security. You slide through the bars, and a mysterious creature runs over.\n")
+    print("Talking to animals (1)")
+    print("Invisibility Potion (2)")
+    Power = input("Select a power to use (1 or 2)")
+    if(Power == "1"):
+        print("How is that going to help you? GAME OVER")
+        sys.exit(0)
+    elif(Power == "2"):
+        print("Before he sees you, you go invisible")
+        print("You notice a lion in another prison cell")
+        print("Talking to animals (1)\n")
+        print("Invisibility Potion (2)\n")
+        Power = input("Select a power to use (1 or 2)\n")
+        if(Power == "1"):
+            print("you free the lion and work together to defeat the mysterious creature")
+        if(Power == "2"):
+            print("You already used that one. oh no, your invisibility ran out. GAME OVER")
+            sys.exit(0)
 elif(power_3 == True and potion_1 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap)\n")
     print("You wake up in a mysterious prison cell with minimal security. You slide through the bars, and a mysterious creature runs over, and you battle.\n")
-    print("He shoots fire at you. You remember that you purchased a fire resistance potion from a witch,  you used your potion, you teleported behind the monster, and then you defeated the monster.\n")
+    print("He shoots fire at you")
+    print("Teleportation (1)\n")
+    print("Fire Resistance Potion (2)\n")
+    Power = input("Select a power to use (1 or 2)\n")
+    if(Power == "1"):
+            print("You teleport behind the monster and you're about to defeat him but WAAAAIT... you're... still on fire GAME OVER :(")
+    if(Power == "2"):
+        print("You aren't on fire anymore but you still can't defeat him...")
+        print("Teleportation (1)\n")
+        print("Fire Resistance Potion (2)\n")
+        Power = input("Select a power to use (1 or 2)\n")
+        if(Power == "1"):
+            print("You teleport behind the monster and defeat him")
+        if(Power == "2"):
+            print("You already used that one. oh no, your invisibility ran out. GAME OVER")
+            sys.exit(0)
 elif(power_3 == True and potion_2 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap)\n")
-    print("You wake up in a mysterious prison cell with minimal security. You remember that you purchased an instant healing potion from a witch, so you slide through the bars, a mysterious creature runs over, and you battle.\n")
-    print("He shoots fire at you, you use your potion, you teleport behind the monster, and then you defeat the monster.\n")
+    print("You wake up in a mysterious prison cell with minimal security")
+    print("You slide through the bars and a mysterious creature with a flamethrower runs over, and he shoots fire at you.\n")
+    print("Teleportation (1)\n")
+    print("Instant Healing Potion (2)\n")
+    Power = input("Select a power to use (1 or 2)\n")
+    if(Power == "2"):
+        print("You're no longer on fire but you still can't beat the monster")
+        print("Teleportation (1)\n")
+        print("Instant Healing Potion (2)\n")
+        Power = input("Select a power to use (1 or 2)\n")
+        if(Power == "1"):
+            print("You teleport behind the monster and defeat him.")
+        if(Power == "2"):
+            print("You already used that one. GAME OVER :(")
+            sys.exit(0)
+    if(Power == "1"):
+        print("You teleport behind the monster and you're about to defeat him but WAAAAIT... you're... still on fire GAME OVER :(")
+        sys.exit(0)
 elif(power_3 == True and potion_3 == True):
     print("You were peacefully eating breakfast when all of a sudden (Pow) (Zap)\n")
-    print("You wake up in a mysterious prison cell with minimal security. so you slide through the bars, and a mysterious creature runs over, and you battle.\n")
-    print("You remember you purchased an invisibility potion from a witch, you use your potion, and then you teleport over to him and defeat him undetected.\n")
-# TODO: STEP #7: Add a story ending
-# Print a creative ending for your story
-# Example: print("\nThe End") or print("\nAnd they lived happily ever after!")
+    print("You wake up in a mysterious prison cell with minimal security. so you slide through the bars, and a mysterious creature runs over, and you battle\n")
+    print("Teleportation (1)\n")
+    print("Invisibility (2)\n")
+    Power = input("Select a power to use (1 or 2)\n")
+    if(Power == "1"):
+            print("You teleport behind the monster and you defeat him")
+    if(Power == "2"):
+        print("You use your invisibility potion and you are able to defeat him")
 print("The End.")
